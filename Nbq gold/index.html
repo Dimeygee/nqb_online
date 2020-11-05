@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+
+    <div id='container'>
+        <div class="overlay"></div>
+        <div class='nav'>
+            <div class='logo_box'>
+                <span class='logo'><img src="images/NBQ_LOGO_2x.png" alt="" ></span>
+                <span class='logo_text'>
+                    <i data-jam='arrow-left' data-fill='red'></i>
+                    <a href="#"> Back to NBQ Home</a>
+                </span>
+            </div>
+            <div class="login_box">
+                <span class='req'>
+                    <i data-jam='padlock-f'></i>
+                    <a href="#" style='display:inline-block; margin-left:5px;'>Login securely</a>
+                </span>
+            </div>
+        </div>
+        <div class='form_container'>
+            <form  method='POST' action='account.html'  name='myform' onsubmit="return validate()">
+                <h2>Welcome to NBQonline</h2>
+                <div class='user_con'>
+                    <label for="user">User ID</label>
+                    <input type="text" id='user' placeholder="Enter user id" required >
+                    <small>forgot user id</small>
+                </div>
+                <div class='pass_con'>
+                    <label for="pass">Password</label>
+                    <input type="password" id='pass' placeholder="Enter password" required>
+                    <small>forgot password</small>
+                </div>
+                <div class='check_con'>
+                    <input type="checkbox">
+                    <span>Remember User ID</span>
+                </div>
+                <div class='login_con'>
+                    <input type="submit" value='login'>
+                    <i data-jam='chevron-right' data-fill='white'></i>
+                </div>
+            </form>
+            <p>Registration for NBQonline</p>
+        </div>
+    </div>
+
+
+    
+    <script src='js/jquery-3.5.1.min.js'></script>
+    <script src='js/bootstrap.min.js'></script>
+    <script src='js/jam.min.js'></script>
+    <script src="js/moment.js"></script>
+    <script src="js/moment-timezone-with-data.js"></script>
+    <script src='js/function.js'></script>
+</body>
+</html>
